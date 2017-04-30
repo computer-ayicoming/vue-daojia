@@ -2,6 +2,18 @@
 
 > A Vue.js project
 
+## Add what？
+
+1. add the element-ui
+2. use the vuex
+3. use stylus
+
+all things are ok, let's go go go !!!
+
+u can clone the repo form the github,
+u can run the project on Windows, Linux OSX,
+but u need to install **node** before you coding !
+
 ## Build Setup
 
 ``` bash
