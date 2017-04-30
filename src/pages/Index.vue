@@ -1,52 +1,8 @@
 <template>
   <section class="container">
-    <div>
-      <router-link to="template">template</router-link>
-      <router-link to="test">test</router-link>
-    </div>
-    <header class="header cls">
-      <div class="nav">
-        <div class="logo">
-          <img src="../assets/img/icon/logo.png">
-        </div>
-        <ul class="nav-list cls">
-          <a href="index.html">
-            <li class="nav-item">首页</li>
-          </a>
-          <a href="Housekeeping.html">
-            <li class="nav-item">家政</li>
-          </a>
-          <a href="#">
-            <li class="nav-item">月嫂</li>
-          </a>
-          <a href="#">
-            <li class="nav-item">育儿嫂</li>
-
-          </a>
-          <a href="#">
-            <li class="nav-item">保姆</li>
-          </a>
-          <a href="#">
-            <li class="nav-item">企业服务</li>
-          </a>
-        </ul>
-      </div>
-    </header>
     <div class="content">
       <div class="banner">
         <slider></slider>
-        <div class="boxID" id="boxID" style="display: none">
-          <div class="pic">
-            <ul>
-              <li><a href="#"><img src="../assets/img/baojie.png" alt=""/></a></li>
-              <li><a href="#"><img src="../assets/img/fuyubiaoyu.png" alt=""/></a></li>
-              <li><a href="#"><img src="../assets/img/hezuo.png" alt=""/></a></li>
-              <li><a href="#"><img src="../assets/img/piju.png" alt=""/></a></li>
-              <li><a href="#"><img src="../assets/img/shipinjiaoxue.png" alt=""/></a></li>
-              <!-- 你可以根据你的需要增加更多的列 -->
-            </ul>
-          </div>
-        </div>
       </div>
       <div class="serve">
         <ul class="serve-list">
@@ -68,7 +24,6 @@
         <strong>热门服务:</strong>
         <div class="hot-item">家电清洗</div>
       </div>
-    </div>
     </div>
     <div class="large-container">
       <div class="large-content">
@@ -152,57 +107,25 @@
             <li class="links-item"></li>
           </ul>
         </div>
-
-
       </div>
     </div>
-    <div class="icon">
-      <ul>
-        <li class="icon-list">
-          <img src="../assets/img/icon/金牌供应商.png" alt="">
-          <p class="icon-p">金牌供应</p>
-        </li>
-        <li class="icon-list">
-          <img src="../assets/img/icon/买家保障.png"/>
-          <p class="icon-p">服务保障</p>
-        </li>
-        <li class="icon-list">
-          <img src="../assets/img/icon/极速退款.png"/>
-          <p class="icon-p">极速退款</p>
-        </li>
-      </ul>
-    </div>
-    <footer class="footer">
-      <ul class="about-list">
-        <li class="about-item"><a href="">网站地图</a></li>
-        <li class="about-item">|</li>
-        <li class="about-item"><a href="">关于我们</a></li>
-        <li class="about-item">|</li>
-        <li class="about-item"><a href="">加入我们</a></li>
-        <li class="about-item">|</li>
-        <li class="about-item"><a href="">媒体报道</a></li>
-      </ul>
-      <div class="msg">
-        <p class="about-botton">@2017 zhoubao.com 阿姨来了版权所有</p>
-        <p class="about-botton">周宝家政有限公司</p>
-      </div>
-    </footer>
+
   </section>
 </template>
 
 <script>
-  import Logo from '~components/Logo.vue'
-  import Slider from '~components/Slider'
+  import Slider from '@/components/Slider'
+  import Icon from '@/components/icon'
   export default {
     components: {
-      Logo,
-      Slider
+      Slider,
+      Icon
     }
   }
 </script>
 
 <style lang="stylus" scoped>
-  @import "../assets/css/reset.css"
+  @import "../style/reset.css"
   @import "../style/common.styl"
   @import "../style/index.styl"
 </style>
